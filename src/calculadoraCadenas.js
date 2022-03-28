@@ -3,8 +3,10 @@ function calcularCadena(cadena)
     if(cadena == "")
     {
         return 0;
-    }     
-    return cadena;
+    }   
+    else{
+        return parseInt(cadena);
+    } 
 }
 
 export default calcularCadena;
