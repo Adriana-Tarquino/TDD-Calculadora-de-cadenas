@@ -1,0 +1,4 @@
+import sumar from "./sumador.js";
+it("deberia calcular una cadena vacia", () => {
+    expect(calcularCadena("2")).toEqual("2");
+  });
