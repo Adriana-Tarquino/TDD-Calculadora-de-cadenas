@@ -1,4 +1,33 @@
-import sumar from "./sumador.js";
-it("deberia calcular una cadena vacia", () => {
-    expect(calcularCadena("2")).toEqual("2");
-  });
+Cuales serían nuestros primeros casos de prueba:
+Necesitamos pensar en el caso de prueba más simple y continuar a partir del mismo  a pasos muy pequeños.
+Por ejemplo, los siguientes casos de prueba:
+- Toma en cuenta la cadena vacía: Para una cadena “” -> 0
+- Toma en cuenta cadena un solo número: Para una cadena “2” -> 2
+- Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3
+- Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6
+if(cadena == "1,2,3")
+        {
+            //suma = parseInt(cadena[0]) + parseInt(cadena[2]);
+            for(var i = 0; i < cadena.length;i++)
+            {
+                //suma = parseInt(cadena[i]) +suma;
+                if(isNaN(cadena[i]) == false)
+                {
+                    suma = parseInt(cadena[i]) + suma;
+                }
+            }
+            return suma;
+        }else{
+            return parseInt(cadena);
+        }
+
+        
+/*function Digitos(cadena)
+{
+    var digitos;
+    for(var i =0; i < cadena.size(); i++)
+    {
+        digitos
+    }
+    return digitos;
+}*/

@@ -6,15 +6,16 @@ function calcularCadena(cadena)
         return 0;
     }   
     else{
-        if(cadena == "1,2")
-        {
-            suma = parseInt(cadena[0]) + parseInt(cadena[2]);
+            for(var i = 0; i < cadena.length;i++)
+            {
+                if(isNaN(cadena[i]) == false)
+                {
+                    suma = parseInt(cadena[i]) + suma;
+                }
+            }
             return suma;
-        }else{
-            return parseInt(cadena);
-        }
-    } 
+        } 
 }
 
 export default calcularCadena;
- 
+//refactoring

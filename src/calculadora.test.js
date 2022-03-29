@@ -10,4 +10,7 @@ describe("Calcular Cadenas", () => {
   it("Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3", () => {
     expect(calcularCadena("1,2")).toEqual(3);
   });
+  it("Toma en cuenta cadena con dos números: Para una cadena “1,2,3” -> 3", () => {
+    expect(calcularCadena("1,2,3")).toEqual(6);
+  });
 });
