@@ -10,7 +10,10 @@ describe("Calcular Cadenas", () => {
   it("Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3", () => {
     expect(calcularCadena("1,2")).toEqual(3);
   });
-  it("Toma en cuenta cadena con dos números: Para una cadena “1,2,3” -> 3", () => {
-    expect(calcularCadena("1,2,3")).toEqual(6);
+  it("Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6", () => {
+    expect(calcularCadena("1,2,3,1,4")).toEqual(11);
   });
+  // it("Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6", () => {
+    //expect(calcularCadena("1,2,4,8,8,10")).toEqual(33);
+ // });
 });
