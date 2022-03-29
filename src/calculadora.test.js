@@ -11,9 +11,9 @@ describe("Calcular Cadenas", () => {
     expect(calcularCadena("1,2")).toEqual(3);
   });
   it("Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6", () => {
-    expect(calcularCadena("1,2,3,1,4")).toEqual(11);
+    expect(calcularCadena("1,2,3")).toEqual(6);
   });
-  // it("Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6", () => {
-    //expect(calcularCadena("1,2,4,8,8,10")).toEqual(33);
- // });
+  it("Toma en cuenta que tambien se puede usar el caracter guion(-) como separador: “1-2,3”  -> 6", () => {
+    expect(calcularCadena("1-2,3")).toEqual(6);
+  });
 });

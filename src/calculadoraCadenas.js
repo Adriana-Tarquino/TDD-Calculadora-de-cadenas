@@ -1,21 +1,24 @@
 function calcularCadena(cadena)
 {
-    var suma = 0, digitos =0;
-    var numero ="";
+    var suma = 0;
     if(cadena == "")
     {
         return 0;
     }   
-    else{
-        for(var i = 0; i < cadena.length;i++)
+    else
+    {
+        for(var i = 0; i < cadena.length ;i++)
         {
-            if(isNaN(cadena[i]) == false)
+            if(isNaN(cadena[i]) == false)// && isNaN(cadena[i] == true))
             {
-                suma = parseInt(cadena[i]) + suma;
+                suma = suma + parseInt(cadena[i]);
             }
-        }
-        return suma;
-        } 
+            else{
+                               
+            }
+        }    
+        return  suma;
+    }
 }
 
 export default calcularCadena;

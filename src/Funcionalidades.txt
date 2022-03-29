@@ -5,22 +5,17 @@ Por ejemplo, los siguientes casos de prueba:
 - Toma en cuenta cadena un solo número: Para una cadena “2” -> 2
 - Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3
 - Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6
-if(cadena == "1,2,3")
-        {
-            //suma = parseInt(cadena[0]) + parseInt(cadena[2]);
-            for(var i = 0; i < cadena.length;i++)
-            {
-                //suma = parseInt(cadena[i]) +suma;
-                if(isNaN(cadena[i]) == false)
+if(isNaN(cadena[i]) == false && isNaN(cadena[i+1] == true))
                 {
                     suma = parseInt(cadena[i]) + suma;
                 }
-            }
-            return suma;
-        }else{
-            return parseInt(cadena);
-        }
-
+                else{
+                    if(isNaN(cadena[i]) ==false && isNaN(cadena[i+1]==false))
+                    {
+                        //numero = cadena[i] + cadena[i+1];
+                        digitos = parseInt(numero);
+                    }
+                }
         
 /*function Digitos(cadena)
 {
