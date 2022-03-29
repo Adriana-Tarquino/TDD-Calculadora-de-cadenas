@@ -17,7 +17,10 @@ describe("Calcular Cadenas", () => {
     expect(calcularCadena(',',"1-2,3")).toEqual(6);
   });
   it("El usuario puede especificar el delimitador", () => {
-    expect(calcularCadena(',',"1,2,3")).toEqual(6);
+    expect(calcularCadena(',',"1/2-3;4")).toEqual(10);
+  });
+  it("Se hace una suma con dos digitos: 1 + 20 +3", () => {
+    expect(calcularCadena(',',"1,20,3")).toEqual(24);
   });
 
 });

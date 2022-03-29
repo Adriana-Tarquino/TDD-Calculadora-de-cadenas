@@ -5,24 +5,8 @@ Por ejemplo, los siguientes casos de prueba:
 - Toma en cuenta cadena un solo número: Para una cadena “2” -> 2
 - Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3
 - Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6
-if(isNaN(cadena[i]) == false && isNaN(cadena[i+1] == true))
-                {
-                    suma = parseInt(cadena[i]) + suma;
-                }
-                else{
-                    if(isNaN(cadena[i]) ==false && isNaN(cadena[i+1]==false))
-                    {
-                        //numero = cadena[i] + cadena[i+1];
-                        digitos = parseInt(numero);
-                    }
-                }
-        
-/*function Digitos(cadena)
-{
-    var digitos;
-    for(var i =0; i < cadena.size(); i++)
-    {
-        digitos
-    }
-    return digitos;
-}*/
+- Toma en cuenta que tambien se puede usar el caracter guion(-) como separador: “1-2,3”  -> 6
+- El usuario puede especificar el delimitador. Por ejemplo el delimitador ‘;’ se especifica así:  
+“//[;] 6;7;4”  retorna 17. 
+Es decir: “//[delimitador]\n secuencia de números”
+- Números mayores a 1000 deberían ser ignorados. Por ejemplo: “2, 1001” debería retornar 2
