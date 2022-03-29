@@ -1,6 +1,7 @@
-function calcularCadena(cadena)
+function calcularCadena(delimitador,cadena)
 {
     var suma = 0;
+   // var digitos;
     if(cadena == "")
     {
         return 0;
@@ -9,12 +10,9 @@ function calcularCadena(cadena)
     {
         for(var i = 0; i < cadena.length ;i++)
         {
-            if(isNaN(cadena[i]) == false)// && isNaN(cadena[i] == true))
+            if(isNaN(cadena[i]) == false && cadena[i] != delimitador)
             {
                 suma = suma + parseInt(cadena[i]);
-            }
-            else{
-                               
             }
         }    
         return  suma;
